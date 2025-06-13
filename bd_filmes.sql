@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Tempo de geração: 13/06/2025 às 23:27
+-- Tempo de geração: 13/06/2025 às 23:30
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -56,17 +56,16 @@ CREATE TABLE `tb_usuarios` (
   `id` int(11) NOT NULL,
   `usuario` varchar(100) NOT NULL,
   `senha` varchar(255) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `usuario_id` int(11) NOT NULL
+  `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Despejando dados para a tabela `tb_usuarios`
 --
 
-INSERT INTO `tb_usuarios` (`id`, `usuario`, `senha`, `email`, `usuario_id`) VALUES
-(5, 'Teste123', '$2y$10$89T4ccnf3FX6VVnXo2Oeu.edTIV29CcfMlFddoh0D6X/peX2uEaTG', 'teste@teste.com', 0),
-(6, 'Senha246', '$2y$10$U5WfZ2IsRB0c9bvTRh3dgu2Cczmoymtr.kxD5GlErq8ayavhoWbpG', 'senha246@teste.com', 0);
+INSERT INTO `tb_usuarios` (`id`, `usuario`, `senha`, `email`) VALUES
+(5, 'Teste123', '$2y$10$89T4ccnf3FX6VVnXo2Oeu.edTIV29CcfMlFddoh0D6X/peX2uEaTG', 'teste@teste.com'),
+(6, 'Senha246', '$2y$10$U5WfZ2IsRB0c9bvTRh3dgu2Cczmoymtr.kxD5GlErq8ayavhoWbpG', 'senha246@teste.com');
 
 --
 -- Índices para tabelas despejadas
